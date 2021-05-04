@@ -25,6 +25,6 @@ export const Nav = styled.nav`
   }
 
   a:last-child:hover {
-    color: #df4444;
+    color: #54e346;
   }
 `;
