@@ -29,6 +29,32 @@ export default function reducer(state = initialState, action) {
       return newState;
     }
 
+    case types.REGISTER_UPDATEDSUCCESS: {
+      const newState = { ...state };
+      newState.user.nome = action.payload.nome;
+      newState.user.email = action.payload.email;
+      newState.isLoading = false;
+      return newState;
+    }
+
+    case types.REGISTER_CREATEDSUCCESS: {
+      const newState = { ...state };
+      newState.isLoading = false;
+      return newState;
+    }
+
+    case types.REGISTER_FAILURE: {
+      const newState = { ...state };
+      newState.isLoading = false;
+      return newState;
+    }
+
+    case types.REGISTER_REQUEST: {
+      const newState = { ...state };
+      newState.isLoading = true;
+      return newState;
+    }
+
     default: {
       return state;
     }

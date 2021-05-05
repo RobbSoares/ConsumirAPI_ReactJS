@@ -35,4 +35,3 @@ export const ProfilePicture = styled.div`
     border-radius: 50%;
   }
 `;
-

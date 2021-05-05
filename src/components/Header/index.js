@@ -9,12 +9,12 @@ export default function Header() {
     <Nav>
       <div>
         <Link to="/">
-          <FaHome size={24} />
+          <FaHome size={24} title="Página inicial" />
         </Link>
-        <Link to="/register">
+        <Link to="/register" title="Registrar-se">
           <FaUserAlt size={24} />
         </Link>
-        <Link to="/login">
+        <Link to="/login" title="Login">
           <FaSignInAlt size={24} />
         </Link>
       </div>
