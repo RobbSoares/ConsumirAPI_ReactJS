@@ -19,7 +19,6 @@ export default function reducer(state = initialState, action) {
     }
 
     case types.LOGIN_FAILURE: {
-      console.log('LOGIN FAILURE');
       const newState = { ...initialState };
       return newState;
     }

@@ -1,37 +1,30 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const AlunoContainer = styled.div`
-  margin-top: 30px;
-
+  margin-top: 20px;
   div {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    padding: 5px 0;
   }
 
-  div:not(:first-child) {
+  div + div {
     border-top: 1px solid #eee;
   }
-
-  span {
-    margin-left: 35px;
-  }
-
-  .icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 20px;
-  }
-
-  .icons .edit {
-    margin-right: 15px;
-  }
 `;
+
 export const ProfilePicture = styled.div`
   img {
-    width: 36px;
-    height: 36px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
+    box-shadow: 0 0 1px 1px hsla(0, 0%, 0%, 0.3);
   }
+`;
+
+export const NovoAluno = styled(Link)`
+  display: block;
+  padding: 20px 0 10px 0;
 `;
