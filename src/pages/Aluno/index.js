@@ -148,7 +148,7 @@ export default function Aluno({ match }) {
       {id && (
         <ProfilePicture>
           {foto ? <img src={foto} alt={nome} /> : <FaUserCircle size={180} />}
-          <Link to="/fotos/">
+          <Link to={`/fotos/${id}`}>
             <FaEdit size={24} />
           </Link>
         </ProfilePicture>
